@@ -1,7 +1,20 @@
-// Body
-$body-bg: #f8fafc;
-
-// Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
+/* Colors */
+:root {
+    --color-primary: #0d0d2b;
+    --color-secondary: #2b076e;
+    --color-accent: #f49f00;
+    --color-accent-hover: #d28a05;
+    --color-white: #ffffff;
+    --color-light-bg-left: #f8f9fb;
+    --color-light-bg-right: #fafbff;
+    --color-grey-7: #fbfcfe;
+    ;
+    --color-grey-6: #f2f2f2;
+    --color-grey-5: #e0e0e0;
+    --color-grey-4: #bdbdbd;
+    --color-grey-3: #828282;
+    --color-black-10: rgba(255, 255, 255, 0.1);
+    --color-thumb: #1e054d;
+    --color-track: rgb(51, 19, 109);
+    --color-thumb-hover: rgb(26, 9, 58);
+}
