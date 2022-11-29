@@ -8,16 +8,29 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Fonts ICON ASOWEMO -->
     <script src="https://kit.fontawesome.com/2d4451ea4e.js" crossorigin="anonymous"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     @vite(['resources/js/app.js'])
+
+    <!-- Rellax JS -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
       integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ=="
       crossorigin="anonymous"
     ></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- Scripts -->
 </head>
