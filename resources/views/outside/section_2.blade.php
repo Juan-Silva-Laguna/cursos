@@ -1,4 +1,4 @@
-  <section class="why-elite">
+  <section class="why-elite" id="">
       <div class="grid grid--1x2 grid--centered">
         <img id="gpu-illustration" src="{{Vite::asset('resources/images/section_mobile_illu.webp')}}" alt="Illustration of gpu"  data-rellax-horizontal-speed="-1" data-rellax-vertical-scroll-axis="x" />
         <div class="banner">

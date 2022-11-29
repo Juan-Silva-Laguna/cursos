@@ -1,5 +1,5 @@
-<div class="slider">
-
+<section class="testimonials" id="testimonials">
+<div class="slider mt-5 mb-5">
     <div class="slide">
       <div class="testimonial">
         <blockquote>“ I’ve been interested in coding for a while but never
@@ -16,7 +16,6 @@
       </div>
 
     </div>
-
     <div class="slide">
       <div class="testimonial">
         <blockquote>“ If you want to lay the best foundation possible I’d
@@ -34,11 +33,9 @@
       </div>
 
     </div>
-       <div class="buttons">
+    <div class="buttons">
       <div class="previous"></div>
       <div class="next"></div>
     </div>
-
-  </div>
-
-</main>
+</div>
+</section>

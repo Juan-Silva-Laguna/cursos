@@ -7,9 +7,9 @@
         </div>
         <nav>
           <ul class="list list--inline">
-            <li class="list__item text text--small text--regular">Cursos</li>
-            <li class="list__item text text--small text--regular">Nosotros</li>
-            <li class="list__item text text--small text--regular">Contactanos</li>
+            <a href="#plans"> <li class="list__item text text--small text--regular">Planes</li></a>
+            <a href="#us"> <li class="list__item text text--small text--regular">Nosotros</li></a>
+            <a href="#us"> <li class="list__item text text--small text--regular">Contactanos</li></a>
           </ul>
           <button class="btn btn--link text text--small text--medium">Iniciar sesión</button>
           <span class="vertical-line"></span>

@@ -32,12 +32,19 @@
  @endphp
  
  <!-- Features -->
-    <section class="features">
-      <h2>¿De quién voy a aprender?</h2>
-
+    <section class="features" id="us">
+      <h2>¿Quiénes somos?</h2>
       <div class="grid grid--1x2 grid--centered banner-bottom-margin">
-        <div class="banner banner--left">
-           <img src="{{Vite::asset('resources/images/statistics.svg')}}" alt="Currency statistics" />
+         <div class="banner banner--left">
+          <h2 class="banner__title">ELITE ACADEMY</h2>
+          <p class="banner__text text text--small text--regular text--muted">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+            make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of 
+            Lorem Ipsum.
+          </p>
         </div>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
