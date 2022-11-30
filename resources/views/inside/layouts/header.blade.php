@@ -1,25 +1,27 @@
-<!-- Header-->
-    <header class="header">
-      
-      <!-- Top Header -->
-      <div class="header__top">
-        <div class="logo">
-          <span class="text text--medium">ELITE ACADEMY</span>
-        </div>
-        <nav>
-          <ul class="list list--inline">
-            <li class="list__item text text--small text--regular">Curso</li>
-            <li class="list__item text text--small text--regular">Clientes por Activar</li>
-            <li class="list__item text text--small text--regular">Mis Clientes Activos</li>
-            <li class="list__item text text--small text--regular">Testimonios</li>
-          </ul>
-          <button class="btn btn--link text text--small text--medium">{{ Auth::user()->name }}</button>
-          <span class="vertical-line"></span>
 
-          <form id="logout-form" action="{{ route('logout') }}" method="POST">
-            @csrf
-            <button class="btn btn--accent text--small text--medium" type="submit">Salir</button>
-          </form>
-        </nav>
-      </div>
-    </header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Curso <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Clientes por Activar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Mis Clientes Activos</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">Testimonios</a>
+      </li>
+      <form id="logout-form" action="{{ route('logout') }}" method="POST">
+        @csrf
+        <button class="btn btn--accent text--small text--medium" type="submit">Salir</button>
+      </form>
+    </ul>
+  </div>
+</nav>

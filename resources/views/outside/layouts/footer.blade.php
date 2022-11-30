@@ -2,7 +2,8 @@
     <footer class="footer">
       <div class="footer__top">
         <div class="footer__top__logo">
-          <span class="text text--medium">ELITE ACADEMY</span>
+          <img style="width:200px" src="{{Vite::asset('resources/images/logo.png')}}" alt="Elite academy logo" />
+          <span class="text text--medium"><b> ELITE ACADEMY </b></span>
         </div>
         <div class="footer__top__menu">
           <nav class="nav">

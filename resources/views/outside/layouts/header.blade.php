@@ -3,7 +3,8 @@
       <!-- Top Header -->
       <div class="header__top">
         <div class="logo">
-          <span class="text text--medium">ELITE ACADEMY</span>
+          <img style="width:200px" src="{{Vite::asset('resources/images/logo.png')}}" alt="Elite academy logo" />
+          <span class="text text--medium"><b> ELITE ACADEMY </b></span>
         </div>
         <nav>
           <ul class="list list--inline">
@@ -13,7 +14,7 @@
           </ul>
           <a href="/ingresar"><button class="btn btn--link text text--small text--medium">Iniciar sesión</button></a>
           <span class="vertical-line"></span>
-          <button class="btn btn--accent text--small text--medium">Registrarse</button>
+         <a href="/registrar/KAX1KJA"> <button class="btn btn--accent text--small text--medium">Registrarse</button></a>
         </nav>
       </div>
       @include('outside.section_1')

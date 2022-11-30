@@ -29,16 +29,14 @@
             <section class="wrapper">
                 <div class="heading">
                     <h1 class="text text-large">Registrarse</h1>
-                    <p class="text text-normal">Iniciar sesión? <span><a href="/ingresar" class="text text-links">Ingresar</a></span>
-                    </p>
+                    <p class="text text-normal">Iniciar sesión? <span><a href="/ingresar" class="text text-links">Ingresar</a></span></p>
+                    <div class="margin-top-5">
+                        <p class="text text-normal">{{ $mensaje }}  <a  target="_black" href="https://wa.me/57{{ $celular }}" class="text text-links">Whatsapp</a></p>
+                    </div>
                 </div>
                  <form name="signin" class="form"action="{{ route('registrar') }}" method="POST" accept-charset="UTF-8">
                   @csrf
                   <input type="hidden" name="codigo" value="{{ $codigo }}">
-                    <p>{{ $mensaje }}</p>
-                    <div class="input-control">
-                        <a  href="https://wa.me/57{{ $celular }}" class="text text-links">Whatsapp</a>
-                    </div>
                     <div class="input-control">
                         <label for="nombre" class="input-label" hidden>Nombre</label>
                         <input class="input-field" placeholder="Nombre" id="nombre" type="text" name="nombre" required>

@@ -37,21 +37,25 @@
                     <div class="input-control">
                         <label for="email" class="input-label" hidden>Correo electronico</label>
                         <input class="input-field" placeholder="Correo electronico" id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-                        @error('email')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
                     </div>
+                    @error('email')
+                        <div style="width: 100%">
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                        </div>
+                    @enderror
                     <div class="input-control">
                         <label for="password" class="input-label" hidden>Contraseña</label>
-                        <input class="input-field" placeholder="Contraseña" @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-                        @error('password')
-                            <span class="invalid-feedback" role="alert">
+                        <input class="input-field" type="password" placeholder="Contraseña @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                    </div>
+                     @error('password')
+                        <div style="width: 100%">
+                            <span class="invalid-feedback"  style="width: 100%" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
-                        @enderror
-                    </div>
+                        </div>
+                    @enderror
                     <div class="input-control">
                         <a href="/" class="text text-links">Volver</a>
                         <input type="submit" name="submit" class="input-submit" value="Ingresar">
