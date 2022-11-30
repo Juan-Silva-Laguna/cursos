@@ -32,13 +32,12 @@
                     <p class="text text-normal">Nueva cuenta? <span><a href="/registrar/1234" class="text text-links">Crear cuenta</a></span>
                     </p>
                 </div>
-                  <p>{{ $mensaje }}</p>
-                  <div class="input-control">
-                      <a  href="https://wa.me/57{{ $celular }}" class="text text-links">Whatsapp</a>
-                      <input type="submit" name="submit" class="input-submit" value="Ingresar">
-                  </div>
                  <form name="signin" class="form"action="{{ route('registrar') }}" method="POST" accept-charset="UTF-8">
                   @csrf
+                    <p>{{ $mensaje }}</p>
+                    <div class="input-control">
+                        <a  href="https://wa.me/57{{ $celular }}" class="text text-links">Whatsapp</a>
+                    </div>
                     <div class="input-control">
                         <label for="nombre" class="input-label" hidden>Nombre</label>
                         <input class="input-field" placeholder="Nombre" id="nombre" type="text" name="nombre" required>
