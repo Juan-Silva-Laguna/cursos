@@ -28,8 +28,8 @@
         <div class="container" style="position: relative;">
             <section class="wrapper">
                 <div class="heading">
-                    <h1 class="text text-large">Iniciar Sesión</h1>
-                    <p class="text text-normal">Nueva cuenta? <span><a href="/registrar/1234" class="text text-links">Crear cuenta</a></span>
+                    <h1 class="text text-large">Registrarse</h1>
+                    <p class="text text-normal">Iniciar sesión? <span><a href="/ingresar" class="text text-links">Ingresar</a></span>
                     </p>
                 </div>
                  <form name="signin" class="form"action="{{ route('registrar') }}" method="POST" accept-charset="UTF-8">
@@ -52,11 +52,7 @@
                     </div>
                     <div class="input-control">
                         <label for="clave" class="input-label" hidden>Contraseña</label>
-                        <input class="input-field" placeholder="Nombre" id="clave" type="password" name="clave" required>
-                    </div>
-                    <div class="input-control">
-                        <label for="password" class="input-label" hidden>Contraseña</label>
-                        <input class="input-field" placeholder="Nombre" id="nombre" type="text" name="nombre" required>
+                        <input class="input-field" placeholder="Contraseña" id="clave" type="password" name="clave" required>
                     </div>
                     <div class="input-control">
                         <a href="/" class="text text-links">Volver</a>
