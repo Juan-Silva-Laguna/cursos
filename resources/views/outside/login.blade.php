@@ -33,6 +33,7 @@
                     </p>
                 </div>
                 <form name="signin" class="form" method="POST" action="{{ route('login') }}">
+                    @csrf
                     <div class="input-control">
                         <label for="email" class="input-label" hidden>Correo electronico</label>
                         <input class="input-field" placeholder="Correo electronico" id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>

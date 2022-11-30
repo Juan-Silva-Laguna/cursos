@@ -39,6 +39,7 @@
                       <input type="submit" name="submit" class="input-submit" value="Ingresar">
                   </div>
                  <form name="signin" class="form"action="{{ route('registrar') }}" method="POST" accept-charset="UTF-8">
+                  @csrf
                     <div class="input-control">
                         <label for="nombre" class="input-label" hidden>Nombre</label>
                         <input class="input-field" placeholder="Nombre" id="nombre" type="text" name="nombre" required>
