@@ -11,7 +11,7 @@
             <a href="#us"> <li class="list__item text text--small text--regular">Nosotros</li></a>
             <a href="#us"> <li class="list__item text text--small text--regular">Contactanos</li></a>
           </ul>
-          <button class="btn btn--link text text--small text--medium">Iniciar sesión</button>
+          <a href="/ingresar"><button class="btn btn--link text text--small text--medium">Iniciar sesión</button></a>
           <span class="vertical-line"></span>
           <button class="btn btn--accent text--small text--medium">Registrarse</button>
         </nav>

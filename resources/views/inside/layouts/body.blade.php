@@ -9,31 +9,13 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
     <script src="https://kit.fontawesome.com/2d4451ea4e.js" crossorigin="anonymous"></script>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    @vite(['resources/js/app.js'])
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
-      integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ=="
-      crossorigin="anonymous"
-    ></script>
-
     <!-- Scripts -->
 </head>
 <body>
     <div id="app">
             @include('inside.layouts.header')
-            @yield('content')
+            @yield('inside')
             @include('inside.layouts.footer')
     </div>
-     <script>
-      new Rellax(".btc-illustration", {
-        horizontal: true,
-      });
-      new Rellax("#gpu-illustration", {
-        horizontal: true,
-      });
-    </script>
 </body>
 </html>

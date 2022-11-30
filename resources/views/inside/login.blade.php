@@ -1,6 +1,3 @@
-@extends('outside.layouts.body')
-
-@section('content')
 <div class="slide"></div>
     </div>
       <div class="previous"></div>
@@ -69,10 +66,13 @@
                                 @endif
                             </div>
                         </div>
+                        <div class="input-control">
+                            <a href="#" class="text text-links">Forgot Password</a> 
+                            <input type="submit" name="submit" class="input-submit" value="Sign In" disabled>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
-@endsection
