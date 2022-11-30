@@ -32,8 +32,7 @@
                     <p class="text text-normal">Nueva cuenta? <span><a href="/registrar/1234" class="text text-links">Crear cuenta</a></span>
                     </p>
                 </div>
-
-                  <h1>{{ $mensaje }}</h1>
+                  <p>{{ $mensaje }}</p>
                   <div class="input-control">
                       <a  href="https://wa.me/57{{ $celular }}" class="text text-links">Whatsapp</a>
                       <input type="submit" name="submit" class="input-submit" value="Ingresar">

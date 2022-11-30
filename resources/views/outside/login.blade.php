@@ -29,7 +29,7 @@
             <section class="wrapper">
                 <div class="heading">
                     <h1 class="text text-large">Iniciar Sesión</h1>
-                    <p class="text text-normal">Nueva cuenta? <span><a href="/registrar/1234" class="text text-links">Crear cuenta</a></span>
+                    <p class="text text-normal">Nueva cuenta? <span><a href="/registrar/KAX1KJA" class="text text-links">Crear cuenta</a></span>
                     </p>
                 </div>
                 <form name="signin" class="form" method="POST" action="{{ route('login') }}">
