@@ -92,12 +92,12 @@ class RegisterController extends Controller
             'videos_vistos' => 0,
             'celular' => $request->celular,
             'usuario_id' => $patrocinador->id,
-            'activo', 0
+            'activo' => 0
         ]);
          
         $user->save();
 
-        $mensaje = "Bienvenido(a) para nosotros es un gusto que hagas parte de la mejor academia!" . $codigo;
+        $mensaje = "Bienvenido(a) para nosotros es un gusto que hagas parte de la mejor academia!" ;
         return view('outside.register', ['codigo' => $request->codigo, 'mensaje' => $mensaje, 'celular' => null]);
     }
 

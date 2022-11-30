@@ -34,6 +34,7 @@
                 </div>
                  <form name="signin" class="form"action="{{ route('registrar') }}" method="POST" accept-charset="UTF-8">
                   @csrf
+                  <input type="hidden" name="codigo" value="{{ $codigo }}">
                     <p>{{ $mensaje }}</p>
                     <div class="input-control">
                         <a  href="https://wa.me/57{{ $celular }}" class="text text-links">Whatsapp</a>
