@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Route::get('/ingresar', function () {
     return view('outside.login');
-});
+})->name('ingresar');
 
 Route::get('/registrar/{codigo}', [RegisterController::class, 'indexRegister'])->middleware('guest');
 
