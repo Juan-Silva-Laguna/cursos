@@ -8,6 +8,118 @@
              src="{{Vite::asset('resources/videos/')}}{{ Auth::user()->videos_vistos }}.mp4" width="100%" autoplay poster="{{Vite::asset('resources/images/logo.png')}}">
             Tu navegador no admite el elemento <code>video</code>.
             </video>
+            <div id="welcome" class="col-12 p-4">
+                <h6><b> Curso Traider de 0 a Experto</b></h6>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+                    been the industry's standard dummy text ever since the 1500s, when an unknown 
+                    printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic 
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s 
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more 
+                    recently with desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum.</p>
+                <span class="badge bg-secondary">Emprendimiento</span>
+                <span class="badge bg-secondary">Traiding</span>
+                <span class="badge bg-secondary">Liderazgo</span>
+            </div>
+            <div id="detail-0" style="display: none" class="col-12 p-4">
+                <h6><b> Bienvenida</b></h6>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+                    been the industry's standard dummy text ever since the 1500s, when an unknown 
+                    printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic 
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s 
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more 
+                    recently with desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum.</p>
+                <span class="badge bg-secondary">Emprendimiento</span>
+                <span class="badge bg-secondary">Traiding</span>
+                <span class="badge bg-secondary">Liderazgo</span>
+            </div>
+            <div id="detail-1" style="display: none" class="col-12 p-4">
+                <h6><b> Herramientas</b></h6>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+                    been the industry's standard dummy text ever since the 1500s, when an unknown 
+                    printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic 
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s 
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more 
+                    recently with desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum.</p>
+                <span class="badge bg-secondary">Emprendimiento</span>
+                <span class="badge bg-secondary">Traiding</span>
+                <span class="badge bg-secondary">Liderazgo</span>
+            </div>
+            <div id="detail-2" style="display: none" class="col-12 p-4">
+                <h6><b> que es?</b></h6>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+                    been the industry's standard dummy text ever since the 1500s, when an unknown 
+                    printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic 
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s 
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more 
+                    recently with desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum.</p>
+                <span class="badge bg-secondary">Emprendimiento</span>
+                <span class="badge bg-secondary">Traiding</span>
+                <span class="badge bg-secondary">Liderazgo</span>
+            </div>
+            <div id="detail-3" style="display: none" class="col-12 p-4">
+                <h6><b> Como operar?</b></h6>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+                    been the industry's standard dummy text ever since the 1500s, when an unknown 
+                    printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic 
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s 
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more 
+                    recently with desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum.</p>
+                <span class="badge bg-secondary">Emprendimiento</span>
+                <span class="badge bg-secondary">Traiding</span>
+                <span class="badge bg-secondary">Liderazgo</span>
+            </div>
+            <div id="detail-4" style="display: none" class="col-12 p-4">
+                <h6><b> A corto plazo?</b></h6>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+                    been the industry's standard dummy text ever since the 1500s, when an unknown 
+                    printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic 
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s 
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more 
+                    recently with desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum.</p>
+                <span class="badge bg-secondary">Emprendimiento</span>
+                <span class="badge bg-secondary">Traiding</span>
+                <span class="badge bg-secondary">Liderazgo</span>
+            </div>
+            <div id="detail-5" style="display: none" class="col-12 p-4">
+                <h6><b> A mediano plazo?</b></h6>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+                    been the industry's standard dummy text ever since the 1500s, when an unknown 
+                    printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic 
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s 
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more 
+                    recently with desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum.</p>
+                <span class="badge bg-secondary">Emprendimiento</span>
+                <span class="badge bg-secondary">Traiding</span>
+                <span class="badge bg-secondary">Liderazgo</span>
+            </div>
+            <div id="detail-6" style="display: none" class="col-12 p-4">
+                <h6><b> A largo plazo?</b></h6>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+                    been the industry's standard dummy text ever since the 1500s, when an unknown 
+                    printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic 
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s 
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more 
+                    recently with desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum.</p>
+                <span class="badge bg-secondary">Emprendimiento</span>
+                <span class="badge bg-secondary">Traiding</span>
+                <span class="badge bg-secondary">Liderazgo</span>
+            </div>
         </div>
        
         <div hidden class="col-6" >
@@ -117,6 +229,7 @@
         let video = document.getElementById('myVideo').getAttribute('src');
         let partes = video.split('/videos/');
         let numVideo = partes[1].split('.mp4');
+        console.log(numVideo[0])
         numVideo = Number(numVideo[0]);
         let top = {{ Auth::user()->videos_vistos }};
         if (numVideo == top) {
@@ -135,6 +248,7 @@
 
     function colocarVideo(num) {
         let top = {{ Auth::user()->videos_vistos }};
+        console.log(top)
         if (num > top) {
             Toastify({
                     text: "Aun te falta desbloquear algunos videos",
@@ -145,10 +259,12 @@
             }).showToast();
             return;
         }
+        $("#welcome").css('display', 'none');
+        $("#detail-" + num).css('display', 'block');
         
-        $("#list-video-" + num).addClass("active");
-        
+         $("#list-video-" + lastVideo).removeClass("active");
         if(lastVideo != null) {
+            $("#detail-" + lastVideo).css('display', 'none');
             $("#list-video-" + lastVideo).removeClass("active");
         }
         lastVideo = num
