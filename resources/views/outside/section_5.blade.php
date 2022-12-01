@@ -9,7 +9,7 @@
       "link" => "https://api.whatsapp.com/send?phone=573173781049&text=Me%20interesa%20saber%20m%C3%A1s%20sobre%20como%20adquirir%20educaci%C3%B3n%20para%20conseguir%20la%20Rentabilidad%20en%20el%20Trading"
     ],
     [
-      "nombre" => 'Jhon Laguna', 
+      "nombre" => 'Jhon Barrera', 
       "cargo" => 'Trader Binarias',  
       "relato" => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
       "telefono" => '3114972859',
