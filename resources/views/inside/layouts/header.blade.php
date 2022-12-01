@@ -1,7 +1,7 @@
 
 <div class="grid bg-dark" style="border-bottom: 1px solid #3f3f3f ">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
-  <a class="navbar-brand" href="#"> <b> ELITE <span style="color: #FFB801">ACADEMY</span>  </b></a>
+  <a class="navbar-brand" href="/"> <b> ELITE <span style="color: #FFB801">ACADEMY</span>  </b></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
