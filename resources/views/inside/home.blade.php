@@ -121,32 +121,6 @@
                 <span class="badge bg-secondary">Liderazgo</span>
             </div>
         </div>
-       
-        <div hidden class="col-6" >
-        
-            <h2>Curso Traider de 0 a Experto</h2>
-            <ul>
-                <li>Introduccion
-                    <ul>
-                        <li style="cursor: pointer" onClick="colocarVideo(0)">Bienvenida {{ (Auth::user()->videos_vistos==0 ? " - Reproduciendo -": (Auth::user()->videos_vistos>0?" - Terminado - ": "")) }}</li>
-                        <li style="cursor: pointer" onClick="colocarVideo(1)">Herramientad {{ (Auth::user()->videos_vistos==1 ? " - Reproduciendo -": (Auth::user()->videos_vistos>1?" - Terminado - ": "")) }}</li>
-                    </ul>
-                </li>
-                <li>Bolsa de valores
-                    <ul>
-                        <li style="cursor: pointer" onClick="colocarVideo(2)">que es? {{ (Auth::user()->videos_vistos==2 ? " - Reproduciendo -": (Auth::user()->videos_vistos>2?" - Terminado - ": "")) }}</li>
-                        <li style="cursor: pointer" onClick="colocarVideo(3)">Como operar? {{ (Auth::user()->videos_vistos==3 ? " - Reproduciendo -": (Auth::user()->videos_vistos>3?" - Terminado - ": "")) }}</li>
-                    </ul>
-                </li>
-                <li>Tipos de operaciones
-                    <ul>
-                        <li style="cursor: pointer" onClick="colocarVideo(4)">A corto plazo {{ (Auth::user()->videos_vistos==4 ? " - Reproduciendo -": (Auth::user()->videos_vistos>4?" - Terminado - ": "")) }}</li>
-                        <li style="cursor: pointer" onClick="colocarVideo(5)">A medio plazo {{ (Auth::user()->videos_vistos==5 ? " - Reproduciendo -": (Auth::user()->videos_vistos>5?" - Terminado - ": "")) }}</li>
-                        <li style="cursor: pointer" onClick="colocarVideo(6)">A largo plazo {{ (Auth::user()->videos_vistos==6 ? " - Reproduciendo -": (Auth::user()->videos_vistos>6?" - Terminado - ": "")) }}</li>
-                    </ul>
-                </li>
-                </ul>
-        </div>
         <div class="col-4 p-0" style="border-left:1px solid #000">
             <div class="accordion accordion-flush" id="accordionFlushExample">  
                 <div class="col-12 p-3 bg-dark" style="border-bottom: 1px solid #000">

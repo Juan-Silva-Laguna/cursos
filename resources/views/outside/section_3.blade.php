@@ -55,7 +55,7 @@
         </div>
       </div>
       <h2 class="text--primary">¿Cuál es el contenido del curso?</h2>
-      <div class="currencies">
+      <div class="currencies" id="courses">
         <div class="card card--white">
           <div class="currency-icon w-100">
             <i class="fa fa-solid fa-play" style="font-size: 732px;margin-top: -160px;margin-left: -277px;z-index: -1;color: #ebebeb;"></i>
@@ -68,12 +68,12 @@
           </div>
           <p class="text text-small text--regular card__text">Entenderás que es un exchange y cuáles son los principales, aprenderás cómo y dónde, 
             comprar y vender criptomonedas y guardarlas de forma segura.</p>
-          <button class="btn btn--flex btn--accent">
+          <a href="#video-section"><button onClick="colocarVideoFree(0, 'Capitulo 1')"  class="btn btn--flex btn--accent">
             <span class="text--standart text--medium">Comenzar curso</span>
             <div class="chiron-icon-container">
               <img src="{{Vite::asset('resources/images/chevron-right.svg')}}" alt="Right Icon" />
             </div>
-          </button>
+          </button></a> 
         </div>
         <div class="card card--secondary">
           <div class="currency-icon w-100">
@@ -87,12 +87,12 @@
           </div>
           <p class="text text-small text--regular card__text">Entenderás que es un exchange y cuáles son los principales, aprenderás cómo y dónde, 
             comprar y vender criptomonedas y guardarlas de forma segura.</p>
-          <button class="btn btn--flex btn--accent">
+         <a href="#video-section"> <button onClick="colocarVideoFree(1, 'Capitulo 2')" class="btn btn--flex btn--accent">
             <span class="text--standart text--medium">Comenzar curso</span>
             <div class="chiron-icon-container">
               <img src="{{Vite::asset('resources/images/chevron-right.svg')}}" alt="Right Icon" />
             </div>
-          </button>
+          </button></a>
         </div>
         <div class="card card--white">
           <div class="currency-icon w-100">
@@ -106,12 +106,12 @@
           </div>
           <p class="text text-small text--regular card__text">Entenderás que es un exchange y cuáles son los principales, aprenderás cómo y dónde, 
             comprar y vender criptomonedas y guardarlas de forma segura.</p>
-          <button class="btn btn--flex btn--accent">
+         <a href="#video-section"> <button onClick="colocarVideoFree(2, 'Capitulo 3')" class="btn btn--flex btn--accent">
             <span class="text--standart text--medium">Comenzar curso</span>
             <div class="chiron-icon-container">
               <img src="{{Vite::asset('resources/images/chevron-right.svg')}}" alt="Right Icon" />
             </div>
-          </button>
+          </button></a>
         </div>
       </div>
     </section>
