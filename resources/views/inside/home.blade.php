@@ -1,8 +1,8 @@
 @extends('inside.layouts.body')
 @section('dashboard')
-<section class="container mt-5 bg-dark" >
+<section class="row bg-dark" >
       <div class="row" >
-        <div class="col-6 p-0">
+        <div class="col-8 p-0">
              <video id="myVideo" type="video/mp4" playsinline 
              controls="controls" controlsList="nodownload" 
              src="{{Vite::asset('resources/videos/')}}{{ Auth::user()->videos_vistos }}.mp4" width="100%" autoplay poster="{{Vite::asset('resources/images/logo.png')}}">
@@ -147,7 +147,7 @@
                 </li>
                 </ul>
         </div>
-        <div class="col-6 p-0" style="border-left:1px solid #000">
+        <div class="col-4 p-0" style="border-left:1px solid #000">
             <div class="accordion accordion-flush" id="accordionFlushExample">  
                 <div class="col-12 p-3 bg-dark" style="border-bottom: 1px solid #000">
                      <h4>Curso Traider de 0 a Experto</h4>
@@ -224,6 +224,15 @@
 </section>
 <script>
     let lastVideo = null
+    init()
+
+    function init(){
+      let = currentVideo = "{{ Auth::user()->videos_vistos }}"
+      $("#welcome").css('display', 'none');
+      $("#detail-" + currentVideo).css('display', 'block');
+      $("#list-video-" + currentVideo).addClass("active");
+    }
+
     document.getElementById('myVideo').onended = function(e) {
 
         let video = document.getElementById('myVideo').getAttribute('src');
@@ -248,7 +257,6 @@
 
     function colocarVideo(num) {
         let top = {{ Auth::user()->videos_vistos }};
-        console.log(top)
         if (num > top) {
             Toastify({
                     text: "Aun te falta desbloquear algunos videos",
@@ -261,8 +269,8 @@
         }
         $("#welcome").css('display', 'none');
         $("#detail-" + num).css('display', 'block');
-        
-         $("#list-video-" + lastVideo).removeClass("active");
+        $("#list-video-" + num).addClass("active");
+        $("#list-video-" + lastVideo).removeClass("active");
         if(lastVideo != null) {
             $("#detail-" + lastVideo).css('display', 'none');
             $("#list-video-" + lastVideo).removeClass("active");
