@@ -23,7 +23,7 @@
                 <span class="badge bg-secondary">Liderazgo</span>
             </div>
             <div id="detail-0" style="display: none" class="col-12 p-4">
-                <h6><b> Bienvenida</b></h6>
+                <h6><b> CLASE 1 CONOCIENDO EL GRAFICADOR</b></h6>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
                     been the industry's standard dummy text ever since the 1500s, when an unknown 
                     printer took a galley of type and scrambled it to make a type specimen book. 
@@ -37,7 +37,7 @@
                 <span class="badge bg-secondary">Liderazgo</span>
             </div>
             <div id="detail-1" style="display: none" class="col-12 p-4">
-                <h6><b> Herramientas</b></h6>
+                <h6><b> CLASE 2 - VELAS JAPONESAS</b></h6>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
                     been the industry's standard dummy text ever since the 1500s, when an unknown 
                     printer took a galley of type and scrambled it to make a type specimen book. 
@@ -122,51 +122,62 @@
             </div>
         </div>
        
-        <div hidden class="col-6" >
-        
-            <h2>Curso Traider de 0 a Experto</h2>
-            <ul>
-                <li>Introduccion
-                    <ul>
-                        <li style="cursor: pointer" onClick="colocarVideo(0)">Bienvenida {{ (Auth::user()->videos_vistos==0 ? " - Reproduciendo -": (Auth::user()->videos_vistos>0?" - Terminado - ": "")) }}</li>
-                        <li style="cursor: pointer" onClick="colocarVideo(1)">Herramientad {{ (Auth::user()->videos_vistos==1 ? " - Reproduciendo -": (Auth::user()->videos_vistos>1?" - Terminado - ": "")) }}</li>
-                    </ul>
-                </li>
-                <li>Bolsa de valores
-                    <ul>
-                        <li style="cursor: pointer" onClick="colocarVideo(2)">que es? {{ (Auth::user()->videos_vistos==2 ? " - Reproduciendo -": (Auth::user()->videos_vistos>2?" - Terminado - ": "")) }}</li>
-                        <li style="cursor: pointer" onClick="colocarVideo(3)">Como operar? {{ (Auth::user()->videos_vistos==3 ? " - Reproduciendo -": (Auth::user()->videos_vistos>3?" - Terminado - ": "")) }}</li>
-                    </ul>
-                </li>
-                <li>Tipos de operaciones
-                    <ul>
-                        <li style="cursor: pointer" onClick="colocarVideo(4)">A corto plazo {{ (Auth::user()->videos_vistos==4 ? " - Reproduciendo -": (Auth::user()->videos_vistos>4?" - Terminado - ": "")) }}</li>
-                        <li style="cursor: pointer" onClick="colocarVideo(5)">A medio plazo {{ (Auth::user()->videos_vistos==5 ? " - Reproduciendo -": (Auth::user()->videos_vistos>5?" - Terminado - ": "")) }}</li>
-                        <li style="cursor: pointer" onClick="colocarVideo(6)">A largo plazo {{ (Auth::user()->videos_vistos==6 ? " - Reproduciendo -": (Auth::user()->videos_vistos>6?" - Terminado - ": "")) }}</li>
-                    </ul>
-                </li>
-                </ul>
-        </div>
         <div class="col-4 p-0" style="border-left:1px solid #000">
             <div class="accordion accordion-flush" id="accordionFlushExample">  
                 <div class="col-12 p-3 bg-dark" style="border-bottom: 1px solid #000">
-                     <h4>Curso Traider de 0 a Experto</h4>
+                     <h4>CURSO PROFESIONAL EN TRAIDING</h4>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Introduccion
+                        MODULO 1 DE 0 A BASICO
                     </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                         <div class="list-group">
-                            <a href="#" onClick="colocarVideo(0)" id="list-video-0" class="list-group-item list-group-item-action">Bienvenida 
+                            <a href="#" onClick="colocarVideo(0)" id="list-video-0" class="list-group-item list-group-item-action">CLASE 1 - CONOCIENDO EL GRAFICADOR 
                                 @if (Auth::user()->videos_vistos==0) <i class="fa fa-play-circle" style="float: right" aria-hidden="true"></i> @endif
                                 @if (Auth::user()->videos_vistos > 0) <i class="fa fa-check-circle" style="float: right" aria-hidden="true"></i> @endif
-                            <a href="#" onClick="colocarVideo(1)" id="list-video-1" class="list-group-item list-group-item-action">Herramientas
+                            <a href="#" onClick="colocarVideo(1)" id="list-video-1" class="list-group-item list-group-item-action">CLASE 2 - VELAS JAPONESAS
                                 @if (Auth::user()->videos_vistos==1) <i class="fa fa-play-circle" style="float: right" aria-hidden="true"></i> @endif
                                 @if (Auth::user()->videos_vistos > 1) <i class="fa fa-check-circle" style="float: right" aria-hidden="true"></i> @endif
+                            </a>
+                            <a href="#" onClick="colocarVideo(2)" id="list-video-1" class="list-group-item list-group-item-action">CLASE 3 - MOVIMIENTOS DEL MERCADO
+                                @if (Auth::user()->videos_vistos==2) <i class="fa fa-play-circle" style="float: right" aria-hidden="true"></i> @endif
+                                @if (Auth::user()->videos_vistos > 2) <i class="fa fa-check-circle" style="float: right" aria-hidden="true"></i> @endif
+                            </a>
+                            <a href="#" onClick="colocarVideo(3)" id="list-video-1" class="list-group-item list-group-item-action">CLASE 4 - COMO OPERAR EN TENDENCIAS
+                                @if (Auth::user()->videos_vistos==3) <i class="fa fa-play-circle" style="float: right" aria-hidden="true"></i> @endif
+                                @if (Auth::user()->videos_vistos > 3) <i class="fa fa-check-circle" style="float: right" aria-hidden="true"></i> @endif
+                            </a>
+                            <a href="#" onClick="colocarVideo(4)" id="list-video-1" class="list-group-item list-group-item-action">CLASE 5 - ZONAS INSTITUCIONALES
+                                @if (Auth::user()->videos_vistos==4) <i class="fa fa-play-circle" style="float: right" aria-hidden="true"></i> @endif
+                                @if (Auth::user()->videos_vistos > 4) <i class="fa fa-check-circle" style="float: right" aria-hidden="true"></i> @endif
+                            </a>
+                            <a href="#" onClick="colocarVideo(5)" id="list-video-1" class="list-group-item list-group-item-action">CLASE 6 - PATRONES DE VELAS PARTE II
+                                @if (Auth::user()->videos_vistos==5) <i class="fa fa-play-circle" style="float: right" aria-hidden="true"></i> @endif
+                                @if (Auth::user()->videos_vistos > 5) <i class="fa fa-check-circle" style="float: right" aria-hidden="true"></i> @endif
+                            </a>
+                            <a href="#" onClick="colocarVideo(6)" id="list-video-1" class="list-group-item list-group-item-action">CLASE 3 - MOVIMIENTOS DEL MERCADO
+                                @if (Auth::user()->videos_vistos==6) <i class="fa fa-play-circle" style="float: right" aria-hidden="true"></i> @endif
+                                @if (Auth::user()->videos_vistos > 6) <i class="fa fa-check-circle" style="float: right" aria-hidden="true"></i> @endif
+                            </a>
+                            <a href="#" onClick="colocarVideo(7)" id="list-video-1" class="list-group-item list-group-item-action">CLASE 3 - MOVIMIENTOS DEL MERCADO
+                                @if (Auth::user()->videos_vistos==7) <i class="fa fa-play-circle" style="float: right" aria-hidden="true"></i> @endif
+                                @if (Auth::user()->videos_vistos > 7) <i class="fa fa-check-circle" style="float: right" aria-hidden="true"></i> @endif
+                            </a>
+                            <a href="#" onClick="colocarVideo(8)" id="list-video-1" class="list-group-item list-group-item-action">CLASE 3 - MOVIMIENTOS DEL MERCADO
+                                @if (Auth::user()->videos_vistos==8) <i class="fa fa-play-circle" style="float: right" aria-hidden="true"></i> @endif
+                                @if (Auth::user()->videos_vistos > 8) <i class="fa fa-check-circle" style="float: right" aria-hidden="true"></i> @endif
+                            </a>
+                            <a href="#" onClick="colocarVideo(9)" id="list-video-1" class="list-group-item list-group-item-action">CLASE 3 - MOVIMIENTOS DEL MERCADO
+                                @if (Auth::user()->videos_vistos==9) <i class="fa fa-play-circle" style="float: right" aria-hidden="true"></i> @endif
+                                @if (Auth::user()->videos_vistos > 9) <i class="fa fa-check-circle" style="float: right" aria-hidden="true"></i> @endif
+                            </a>
+                            <a href="#" onClick="colocarVideo(10)" id="list-video-1" class="list-group-item list-group-item-action">CLASE 3 - MOVIMIENTOS DEL MERCADO
+                                @if (Auth::user()->videos_vistos==10) <i class="fa fa-play-circle" style="float: right" aria-hidden="true"></i> @endif
+                                @if (Auth::user()->videos_vistos > 10) <i class="fa fa-check-circle" style="float: right" aria-hidden="true"></i> @endif
                             </a>
                             </div>
                     </div>
