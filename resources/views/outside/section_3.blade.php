@@ -68,7 +68,7 @@
             <h3>¿Que es Academia Elite?</h3>
           </div>
           <p class="text text-small text--regular card__text">Somos una academia con la mejor educacion financiera con productos y herramientas tecnologicas que te ayudaran a conseguir una estabilidad economica en el trading.</p>
-          <a href="#video-section"><button onClick="colocarVideoFree(0, '¿Que es Academia Elite?')"  class="btn btn--flex btn--accent">
+          <a href="#video-section"><button onClick="colocarVideoFree('one', '¿Que es Academia Elite?')"  class="btn btn--flex btn--accent">
             <span class="text--standart text--medium">Ver</span>
             <div class="chiron-icon-container">
               <img src="{{Vite::asset('resources/images/chevron-right.svg')}}" alt="Right Icon" />
@@ -86,7 +86,7 @@
             <h3>Nuestros Servicios</h3>
           </div>
           <p class="text text-small text--regular card__text">Academia elite te ofrece gran variedad de servicios, acompañamiento con bases solidas entorno a los mercados financieros.</p>
-         <a href="#video-section"> <button onClick="colocarVideoFree(1, 'Nuestros Servicios')" class="btn btn--flex btn--accent">
+         <a href="#video-section"> <button onClick="colocarVideoFree('two', 'Nuestros Servicios')" class="btn btn--flex btn--accent">
             <span class="text--standart text--medium">Ver</span>
             <div class="chiron-icon-container">
               <img src="{{Vite::asset('resources/images/chevron-right.svg')}}" alt="Right Icon" />
@@ -104,7 +104,7 @@
             <h3>Educación Fincanciera</h3>
           </div>
           <p class="text text-small text--regular card__text">Brindamos conocimientos sobre los principales aspectos relacionados con el buen manejo del dinero, para que mediante bases solidas obtengas la libertad financiera.</p>
-         <a href="#video-section"> <button onClick="colocarVideoFree(2, 'Educación Fincanciera')" class="btn btn--flex btn--accent">
+         <a href="#video-section"> <button onClick="colocarVideoFree('three', 'Educación Fincanciera')" class="btn btn--flex btn--accent">
             <span class="text--standart text--medium">Ver</span>
             <div class="chiron-icon-container">
               <img src="{{Vite::asset('resources/images/chevron-right.svg')}}" alt="Right Icon" />
