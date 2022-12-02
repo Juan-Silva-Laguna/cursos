@@ -50,18 +50,18 @@
       @if( Auth::user()->activo != 0 )
       @if( Auth::user()->id < 6 )
       <li class="nav-item">
-        <a class="nav-link" href="/usuarios/0">Clientes por Activar</a>
+        <a class="nav-link" href="/usuarios/0" style="padding: 1rem 1.3rem;">Clientes por Activar</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/usuariosAll">Todos los Usuarios</a>
+        <a class="nav-link" href="/usuariosAll" style="padding: 1rem 1.3rem;">Todos los Usuarios</a>
       </li>
       
       @endif
       <li class="nav-item">
-        <a class="nav-link" href="/usuarios/1">Mis Clientes Activos</a>
+        <a class="nav-link" href="/usuarios/1" style="padding: 1rem 1.3rem;">Mis Clientes Activos</a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="/testimonios">Testimonios</a>
+        <a class="nav-link" href="/testimonios" style="padding: 1rem 1.3rem;">Testimonios</a>
       </li>
       @endif
       <li class="nav-item"><a onClick="copiar('{{ Auth::user()->codigo }}')" class="btn text--small text--medium" style="" type="submit"><span style="color: #FFB801"><i class="fa fa-sharp fa-solid fa-link"></i> Copiar mi link</span> </a>      </li>
