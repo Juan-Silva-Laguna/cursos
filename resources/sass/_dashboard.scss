@@ -10,7 +10,8 @@
     --color-light: #f1f5f9;
     --color-black: #121212;
     --color-night: #001632;
-    --color-primary: #212529;
+    --color-primary: #0d0d2b;
+    --color-optional: #090919;
     --color-secondary: #f49f00;
 
     --color-red: #f44336;
@@ -33,6 +34,17 @@ html {
     font-size-adjust: 100%;
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
+
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--color-primary), var(--bs-bg-opacity)) !important;
+    
+}
+
+.bg-title-video {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--color-optional), var(--bs-bg-opacity)) !important;
 }
 
 *,
@@ -68,13 +80,13 @@ a {
 }
 
 .accordion{
-    --bs-accordion-bg: #212529 !important;
+    --bs-accordion-bg: var(--color-optional) !important;
     --bs-accordion-btn-icon: url('../images/accordion-btn-icon.svg') !important;
-    --bs-accordion-border-color: #383838 !important;
+    --bs-accordion-border-color: var(--color-optional) !important;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #212529 !important;
+    background-color: var(--color-optional) !important;
     box-shadow: none !important;
 }
 
@@ -85,13 +97,13 @@ a {
 
 
 .list-group-item.active {
-    border-color: #393c3e !important;
-    background-color: #4c4c4d !important;
+    border-color: var(--color-optional) !important;
+    background-color: var(--color-optional) !important;
 }
 
 .list-group-item { 
     color: #ffffff !important;
-    background-color: #383838 !important;
+    background-color: var(--color-optional) !important;
 }
 
 .accordion-button {
@@ -234,4 +246,27 @@ a {
             }
         }
     }
+}
+
+.button-right {
+    float: right;
+    right: 0;
+    position: absolute;
+}
+
+@media screen and (max-width: 720px) { 
+    .button-right {
+         float: left;
+         position: inherit;
+    }
+    .button-logout {
+        padding: 0;
+    }
+}
+
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+    color: #d5d5d5 !important
 }

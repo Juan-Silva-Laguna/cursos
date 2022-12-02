@@ -573,6 +573,21 @@ a:hover {
 .why-elite .banner__text {
     margin-bottom: 3.2rem;
 }
+.gpu-illustration-img-mobile {
+     display: none;
+}
+
+
+@media screen and (max-width: 720px) {
+    .gpu-illustration-img {
+        display: none;
+    }
+
+    .gpu-illustration-img-mobile {
+        display: block;
+    }
+}
+
 
 .background-item-3 {
     width: 10%;
@@ -631,6 +646,7 @@ a:hover {
     .why-elite .banner__text {
         width: 45ch;
     }
+    
 }
 
 /* Trade Securely */
@@ -725,12 +741,29 @@ a:hover {
         padding: 0rem 2rem 5.5rem;
     }
 
+    .calculate {
+        display: grid;
+    }
+
+    .calculate__body {
+        width: 100%;
+    }
+    
+
     .calculate__header>input {
         width: 100%;
     }
 
     .calculate__header>.btn {
         width: 100%;
+    }
+
+    .card--white {
+        max-width: 100%;
+    }
+
+    .card--secondary {
+        max-width: 100%;
     }
 }
 
@@ -1337,10 +1370,31 @@ a:hover {
     }
 }
 
+@media screen and (max-width: 720px) {
+    .swiper {
+       margin-top: 20%;
+    }
+
+    .slider .buttons { 
+        right: 244px;
+    }
+
+    .footer__bottom__social-media {
+        justify-content: center;
+    }
+}
+
 
 .detail-video {
     padding: 2%;
     display: flex;
-    justify-content: space-between;
-    vertical-align: middle;
+}
+
+.detail-text{
+    padding-left: 2%;
+    border-left: 1px solid rgb(125, 124, 124);
+}
+
+.title-video {
+    font-size: 20px !important;
 }

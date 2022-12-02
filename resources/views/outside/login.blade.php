@@ -38,19 +38,19 @@
                         <label for="email" class="input-label" hidden>Correo electronico</label>
                         <input class="input-field" placeholder="Correo electronico" id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                     </div>
+                    <div class="input-control">
+                        <label for="password" class="input-label" hidden>Contraseña</label>
+                        <input class="input-field" type="password" placeholder="Contraseña @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                    </div>
                     @error('email')
-                        <div style="width: 100%">
+                        <div style="width: 100%; margin-bottom: 5% !important;">
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
                         </div>
                     @enderror
-                    <div class="input-control">
-                        <label for="password" class="input-label" hidden>Contraseña</label>
-                        <input class="input-field" type="password" placeholder="Contraseña @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-                    </div>
-                     @error('password')
-                        <div style="width: 100%">
+                    @error('password')
+                        <div style="width: 100%; margin-bottom: 5% !important;">
                             <span class="invalid-feedback"  style="width: 100%" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>

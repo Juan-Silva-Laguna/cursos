@@ -2,12 +2,91 @@
 @section('dashboard')
 <section class="row bg-dark" >
       <div class="row" >
-        <div class="col-8 p-0">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 p-0">
              <video id="myVideo" type="video/mp4" playsinline 
              controls="controls" controlsList="nodownload" 
              src="{{Vite::asset('resources/videos/')}}{{ Auth::user()->videos_vistos }}.mp4" width="100%" autoplay poster="{{Vite::asset('resources/images/logo.png')}}">
             Tu navegador no admite el elemento <code>video</code>.
             </video>
+        </div>
+        <div class="col-xs-12  col-sm-12 col-md-4 col-lg-4 p-0" style="border-left:1px solid #000;background-color: #000 !important;">
+            <div class="accordion accordion-flush" id="accordionFlushExample">  
+                <div class="col-12 p-3 bg-title-video" style="border-bottom: 1px solid #000;background-color: #000 !important;">
+                     <h4>Curso Traider de 0 a Experto</h4>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Introduccion
+                    </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="list-group">
+                            <a href="#" onClick="colocarVideo(0)" id="list-video-0" class="list-group-item list-group-item-action">Bienvenida 
+                                @if (Auth::user()->videos_vistos==0) <i class="fa fa-play-circle" style="float: right" aria-hidden="true"></i> @endif
+                                @if (Auth::user()->videos_vistos > 0) <i class="fa fa-check-circle" style="float: right" aria-hidden="true"></i> @endif
+                            <a href="#" onClick="colocarVideo(1)" id="list-video-1" class="list-group-item list-group-item-action">Herramientas
+                                @if (Auth::user()->videos_vistos==1) <i class="fa fa-play-circle" style="float: right" aria-hidden="true"></i> @endif
+                                @if (Auth::user()->videos_vistos > 1) <i class="fa fa-check-circle" style="float: right" aria-hidden="true"></i> @endif
+                            </a>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Bolsa de valores
+                    </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="list-group">
+                            <a href="#" onClick="colocarVideo(2)" id="list-video-2" class="list-group-item list-group-item-action">que es?
+                                @if (Auth::user()->videos_vistos==2) <i class="fa fa-play-circle" style="float: right" aria-hidden="true"></i> @endif
+                                 @if (Auth::user()->videos_vistos > 2) <i class="fa fa-check-circle" style="float: right" aria-hidden="true"></i> @endif
+                            </a>
+                            <a href="#" onClick="colocarVideo(3)" id="list-video-3" class="list-group-item list-group-item-action">Como operar?
+                                @if (Auth::user()->videos_vistos==3) <i class="fa fa-play-circle" style="float: right" aria-hidden="true"></i> @endif
+                                 @if (Auth::user()->videos_vistos > 3) <i class="fa fa-check-circle" style="float: right" aria-hidden="true"></i> @endif
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Tipos de operaciones
+                    </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="list-group">
+                            <a href="#" onClick="colocarVideo(4)" id="list-video-4" class="list-group-item list-group-item-action">A corto plazo
+                                @if (Auth::user()->videos_vistos==4) <i class="fa fa-play-circle" style="float: right" aria-hidden="true"></i> @endif
+                                 @if (Auth::user()->videos_vistos > 4) <i class="fa fa-check-circle" style="float: right" aria-hidden="true"></i> @endif
+                            </a>
+                            <a href="#" onClick="colocarVideo(5)" id="list-video-5" class="list-group-item list-group-item-action">A mediano plazo
+                                @if (Auth::user()->videos_vistos==5) <i class="fa fa-play-circle" style="float: right" aria-hidden="true"></i> @endif
+                                 @if (Auth::user()->videos_vistos > 5) <i class="fa fa-check-circle" style="float: right" aria-hidden="true"></i> @endif
+                            </a>
+                            <a href="#" onClick="colocarVideo(6)" id="list-video-6" class="list-group-item list-group-item-action">A largo plazo
+                                @if (Auth::user()->videos_vistos==6) <i class="fa fa-play-circle" style="float: right" aria-hidden="true"></i> @endif
+                                 @if (Auth::user()->videos_vistos > 6) <i class="fa fa-check-circle" style="float: right" aria-hidden="true"></i> @endif
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+</section>
+<section class="row bg-title-video" >
+      <div class="row" >
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 p-0">
             <div id="welcome" class="col-12 p-4">
                 <h6><b> Curso Traider de 0 a Experto</b></h6>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
@@ -121,81 +200,9 @@
                 <span class="badge bg-secondary">Liderazgo</span>
             </div>
         </div>
-        <div class="col-4 p-0" style="border-left:1px solid #000">
-            <div class="accordion accordion-flush" id="accordionFlushExample">  
-                <div class="col-12 p-3 bg-dark" style="border-bottom: 1px solid #000">
-                     <h4>Curso Traider de 0 a Experto</h4>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Introduccion
-                    </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <div class="list-group">
-                            <a href="#" onClick="colocarVideo(0)" id="list-video-0" class="list-group-item list-group-item-action">Bienvenida 
-                                @if (Auth::user()->videos_vistos==0) <i class="fa fa-play-circle" style="float: right" aria-hidden="true"></i> @endif
-                                @if (Auth::user()->videos_vistos > 0) <i class="fa fa-check-circle" style="float: right" aria-hidden="true"></i> @endif
-                            <a href="#" onClick="colocarVideo(1)" id="list-video-1" class="list-group-item list-group-item-action">Herramientas
-                                @if (Auth::user()->videos_vistos==1) <i class="fa fa-play-circle" style="float: right" aria-hidden="true"></i> @endif
-                                @if (Auth::user()->videos_vistos > 1) <i class="fa fa-check-circle" style="float: right" aria-hidden="true"></i> @endif
-                            </a>
-                            </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        Bolsa de valores
-                    </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <div class="list-group">
-                            <a href="#" onClick="colocarVideo(2)" id="list-video-2" class="list-group-item list-group-item-action">que es?
-                                @if (Auth::user()->videos_vistos==2) <i class="fa fa-play-circle" style="float: right" aria-hidden="true"></i> @endif
-                                 @if (Auth::user()->videos_vistos > 2) <i class="fa fa-check-circle" style="float: right" aria-hidden="true"></i> @endif
-                            </a>
-                            <a href="#" onClick="colocarVideo(3)" id="list-video-3" class="list-group-item list-group-item-action">Como operar?
-                                @if (Auth::user()->videos_vistos==3) <i class="fa fa-play-circle" style="float: right" aria-hidden="true"></i> @endif
-                                 @if (Auth::user()->videos_vistos > 3) <i class="fa fa-check-circle" style="float: right" aria-hidden="true"></i> @endif
-                            </a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        Tipos de operaciones
-                    </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <div class="list-group">
-                            <a href="#" onClick="colocarVideo(4)" id="list-video-4" class="list-group-item list-group-item-action">A corto plazo
-                                @if (Auth::user()->videos_vistos==4) <i class="fa fa-play-circle" style="float: right" aria-hidden="true"></i> @endif
-                                 @if (Auth::user()->videos_vistos > 4) <i class="fa fa-check-circle" style="float: right" aria-hidden="true"></i> @endif
-                            </a>
-                            <a href="#" onClick="colocarVideo(5)" id="list-video-5" class="list-group-item list-group-item-action">A mediano plazo
-                                @if (Auth::user()->videos_vistos==5) <i class="fa fa-play-circle" style="float: right" aria-hidden="true"></i> @endif
-                                 @if (Auth::user()->videos_vistos > 5) <i class="fa fa-check-circle" style="float: right" aria-hidden="true"></i> @endif
-                            </a>
-                            <a href="#" onClick="colocarVideo(6)" id="list-video-6" class="list-group-item list-group-item-action">A largo plazo
-                                @if (Auth::user()->videos_vistos==6) <i class="fa fa-play-circle" style="float: right" aria-hidden="true"></i> @endif
-                                 @if (Auth::user()->videos_vistos > 6) <i class="fa fa-check-circle" style="float: right" aria-hidden="true"></i> @endif
-                            </a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
       </div>
 </section>
+
 <script>
     let lastVideo = null
     init()
@@ -203,6 +210,9 @@
     function init(){
       let = currentVideo = "{{ Auth::user()->videos_vistos }}"
       $("#welcome").css('display', 'none');
+      if(currentVideo == 7){
+         $("#welcome").css('display', 'block');
+      }
       $("#detail-" + currentVideo).css('display', 'block');
       $("#list-video-" + currentVideo).addClass("active");
     }

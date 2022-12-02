@@ -40,18 +40,18 @@
           <p class="text text--small text--medium text--accent text--uppercase">ANUAL</p>
           <h3>$80 USD</h3>
             <button class="btn btn--accent">Adquirir</button>
-        <div class="text--left mt-4">
-            <p class="text text--small text--regular text--primary ">
-                <i class="fa fa-solid fa-check-double"></i> Acceso al grupo privado en Telegram</p>
-            <p class="text text--small text--regular text--primary ">
-                <i class="fa fa-solid fa-check-double"></i> Monitorias privadas</p>
-            <p class="text text--small text--regular text--primary ">
-                <i class="fa fa-solid fa-check-double"></i> Acceso al grupo de señales</p>
-            <p class="text text--small text--regular text--primary ">
-                <i class="fa fa-solid fa-check-double"></i> Operativas en vivo el Trader</p>
-            <p class="text text--small text--regular text--primary ">
-                <i class="fa fa-solid fa-check-double"></i> Curso intesivo de Psicotrading</p>
-          </div>
+            <div class="text--left mt-4">
+                <p class="text text--small text--regular text--primary ">
+                    <i class="fa fa-solid fa-check-double"></i> Acceso al grupo privado en Telegram</p>
+                <p class="text text--small text--regular text--primary ">
+                    <i class="fa fa-solid fa-check-double"></i> Monitorias privadas</p>
+                <p class="text text--small text--regular text--primary ">
+                    <i class="fa fa-solid fa-check-double"></i> Acceso al grupo de señales</p>
+                <p class="text text--small text--regular text--primary ">
+                    <i class="fa fa-solid fa-check-double"></i> Operativas en vivo el Trader</p>
+                <p class="text text--small text--regular text--primary ">
+                    <i class="fa fa-solid fa-check-double"></i> Curso intesivo de Psicotrading</p>
+              </div>
         </div>
       </div>
       <h2 class="text--primary">¿Cuál es el contenido del curso?</h2>
@@ -68,7 +68,7 @@
           </div>
           <p class="text text-small text--regular card__text">Entenderás que es un exchange y cuáles son los principales, aprenderás cómo y dónde, 
             comprar y vender criptomonedas y guardarlas de forma segura.</p>
-          <a href="#video-section"><button onClick="colocarVideoFree(0, 'Capitulo 1')"  class="btn btn--flex btn--accent">
+          <a href="#video-section"><button onClick="colocarVideoFree(0, 'Capitulo 1', 'Entenderás que es un exchange y cuáles son los principales, aprenderás cómo y dónde, comprar y vender criptomonedas y guardarlas de forma segura.')"  class="btn btn--flex btn--accent">
             <span class="text--standart text--medium">Comenzar curso</span>
             <div class="chiron-icon-container">
               <img src="{{Vite::asset('resources/images/chevron-right.svg')}}" alt="Right Icon" />
@@ -87,7 +87,7 @@
           </div>
           <p class="text text-small text--regular card__text">Entenderás que es un exchange y cuáles son los principales, aprenderás cómo y dónde, 
             comprar y vender criptomonedas y guardarlas de forma segura.</p>
-         <a href="#video-section"> <button onClick="colocarVideoFree(1, 'Capitulo 2')" class="btn btn--flex btn--accent">
+         <a href="#video-section"> <button onClick="colocarVideoFree(1, 'Capitulo 2', 'Entenderás que es un exchange y cuáles son los principales, aprenderás cómo y dónde, comprar y vender criptomonedas y guardarlas de forma segura.')" class="btn btn--flex btn--accent">
             <span class="text--standart text--medium">Comenzar curso</span>
             <div class="chiron-icon-container">
               <img src="{{Vite::asset('resources/images/chevron-right.svg')}}" alt="Right Icon" />
@@ -106,7 +106,7 @@
           </div>
           <p class="text text-small text--regular card__text">Entenderás que es un exchange y cuáles son los principales, aprenderás cómo y dónde, 
             comprar y vender criptomonedas y guardarlas de forma segura.</p>
-         <a href="#video-section"> <button onClick="colocarVideoFree(2, 'Capitulo 3')" class="btn btn--flex btn--accent">
+         <a href="#video-section"> <button onClick="colocarVideoFree(2, 'Capitulo 3', 'Entenderás que es un exchange y cuáles son los principales, aprenderás cómo y dónde, comprar y vender criptomonedas y guardarlas de forma segura.')" class="btn btn--flex btn--accent">
             <span class="text--standart text--medium">Comenzar curso</span>
             <div class="chiron-icon-container">
               <img src="{{Vite::asset('resources/images/chevron-right.svg')}}" alt="Right Icon" />

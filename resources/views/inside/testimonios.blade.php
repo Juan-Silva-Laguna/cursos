@@ -35,7 +35,7 @@
              <h5 class="m-0"><b> TESTIMONIOS </b></h5>
         </div>
          
-        <table class="table mt-4">
+        <table id="testimonio_table" class="table mt-4">
             <thead>
                 <tr>
                     <th>Testimonio</th>
@@ -55,11 +55,17 @@
             @endforeach
                 
             </tbody>
-        </table>
-           @if(count($testimonios) == 0)
-            <span>No se encontraron registros</span>
-            @endif
-                
+        </table>                
     </div>
+<script>
+  $(document).ready( function () {
+    $('#testimonio_table').DataTable({
+        language: spanish(),
+        searching: false,
+        bLengthChange: false
+    });
+} );
+</script>
 @endsection
+
 

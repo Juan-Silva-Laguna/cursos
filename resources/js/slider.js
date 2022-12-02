@@ -10,7 +10,7 @@ function start() {
     setTimeout(function () {
         nextSlide()
         start();
-    }, 3000);
+    }, 7000);
 }
 
 function display(index) {

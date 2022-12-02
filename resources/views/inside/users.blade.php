@@ -2,11 +2,10 @@
 @section('dashboard')
 <div class="container  bg-dark">
     <div class="col-12 mt-5">
-        <div class="card-title">
+        <div class="card-title mb-4">
              <h5 class="m-0"><b> {{strtoupper($titulo)}}</b></h5>
-        </div>
-         
-        <table class="table mt-4">
+        </div>      
+        <table id="users_table" class="table mt-4">
             <thead>
                 <tr>
                     <th class="text-center" >Nombre </th>
@@ -26,10 +25,15 @@
             @endforeach
             </tbody>
         </table>
-           @if(count($users) == 0)
-            <span>No se encontraron registros</span>
-            @endif
-                
     </div>
 </div>
+<script>
+  $(document).ready( function () {
+    $('#users_table').DataTable({
+        language: spanish(),
+        searching: false,
+        bLengthChange: false
+    });
+} );
+</script>
 @endsection
