@@ -3,6 +3,7 @@
 @section('content')
 
 @include('outside.section_3')
+@include('outside.section_6')
 @include('outside.section_2')
 @include('outside.section_5')
 @include('outside.section_4')

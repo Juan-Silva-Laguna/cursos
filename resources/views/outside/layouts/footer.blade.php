@@ -9,10 +9,10 @@
           <nav class="nav">
             <p class="nav__title text text--medium">Secciones</p>
             <ul class="nav__list">
-              <li class="nav__list__item text text--small text--regular">Inicio</li>
-              <li class="nav__list__item text text--small text--regular">Cursos</li>
-              <li class="nav__list__item text text--small text--regular">Nosotros</li>
-              <li class="nav__list__item text text--small text--regular">Contactanos</li>
+              <a href="#plans" class="nav__ast__item text text--small text--regular">Planes</li></a>
+              <a href="#us" class="nav__list__item text text--small text--regular"><li>Nosotros</li></a>
+              <a href="#videos" class="nav__list__item text text--small text--regular"><li>Aprende</li></a>
+              <a href="/ingresar" class="nav__list__item text text--small text--regular"><li>Iniciar sesión</li></a>
             </ul>
           </nav>
         </div>
@@ -20,10 +20,10 @@
           <nav class="nav">
             <p class="nav__title text text--medium">Social</p>
             <ul class="nav__list">
-              <li class="nav__list__item text text--small text--regular">Facebook</li>
-              <li class="nav__list__item text text--small text--regular">Instagram</li>
-              <li class="nav__list__item text text--small text--regular">Twitter</li>
-              <li class="nav__list__item text text--small text--regular">Whatsapp</li>
+              <li class="nav__list__item text text--small text--regular"> <a href="https://web.facebook.com/ElitesAcademycolombia/">Facebook</a> </li>
+              <li class="nav__list__item text text--small text--regular"><a href="https://www.instagram.com/invites/contact/?i=1s3dribkfudzf&utm_content=q20wozf">Instagram</a> </li>
+
+              <li class="nav__list__item text text--small text--regular"> <a href="https://wa.me/573132487859">Whatsapp</a> </li>
             </ul>
           </nav>
         </div>
@@ -43,21 +43,21 @@
         </div>
       </div>
       <div class="footer__bottom">
-        <div class="footer__bottom__copyright text text--small text--regular">&copy;2022 Elite Academy. Todos los derechos reservados.</div>
+        <div class="footer__bottom__copyright text text--small text--regular">&copy;2022 Elite Academy. Todos los derechos reservados. - NO INVIERTAS DINERO QUE NO ESTAS DISPUESTO A PERDER</div>
         <div class="footer__bottom__social-media">
           <div class="social-icon" >
-              <i class="fa fa-brands fa-facebook-f"></i>
+              <a href="https://web.facebook.com/ElitesAcademycolombia/"><i class="fa fa-brands fa-facebook-f"></i></a>
           </div>
           <div class="social-icon" >
-             <i class="fa fa-brands fa-instagram"></i>
-          </div>
-
-          <div class="social-icon" >
-             <i class="fa fa-brands fa-telegram"></i>
+             <a href="https://www.instagram.com/invites/contact/?i=1s3dribkfudzf&utm_content=q20wozf"><i class="fa fa-brands fa-instagram"></i></a>
           </div>
 
           <div class="social-icon" >
-             <i class="fa fa-brands fa-whatsapp"></i>
+            <a href="https://t.me/ComunityEliteFree"> <i class="fa fa-brands fa-telegram"></i></a>
+          </div>
+
+          <div class="social-icon" >
+             <a href="https://wa.me/573132487859"><i class="fa fa-brands fa-whatsapp"></i></a>
           </div>
          
         </div>

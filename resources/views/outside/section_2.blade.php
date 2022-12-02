@@ -4,9 +4,9 @@
         <div class="banner">
           <h2 class="banner__title">Por qué deberías elegir ELITE ACADEMY</h2>
           <p class="banner__text text text--small text--regular text--muted">Podras generar de un 85% a 90% de efectividad en tus TAKES PROFIT, trasnforma los minutos en momentos que importan con una buena educación.</p>
-          <button class="btn btn--accent">
+          <a href="https://www.youtube.com/channel/UCgsi3ZHd_pzmUBi_FyH8-Jw" target="_blanck" class="btn btn--accent">
             <span class="text--standart text--medium">Aprende más</span>
-          </button>
+          </a>
         </div>
       </div>
       <img class="background-item-3" src="{{Vite::asset('resources/images/background-item-3.svg')}}" alt="" />
