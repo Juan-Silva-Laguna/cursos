@@ -6,7 +6,7 @@
     <div class="col-12">    
         <main class="main" style="overflow: hidden">
         <img class="background-item-1" style="position: absolute; height: 100% !important;" src="{{Vite::asset('resources/images/background-item-1.svg')}}" alt="" />
-        <div class="col-6 mt-5">
+        <div class="col-lg-6 col-sm-12 mt-5">
             <div class="card-title">
                 <h5 class="m-0"><b> MI PERFIL </b></h5>
             </div>   

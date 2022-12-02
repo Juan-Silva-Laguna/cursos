@@ -1,7 +1,7 @@
 @extends('inside.layouts.body')
 @section('dashboard')
 <section class="row bg-dark" >
-    @if( Auth::user()->activo != 0 )
+    @if( true)
       <div class="row" >
         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 p-0">
              <video id="myVideo" type="video/mp4" playsinline 
@@ -245,10 +245,8 @@
         </div>
       </div>
     @else
-        <div class="container mt-5">
-            <div class="row">
+        <div class="container col-9 mt-5">
                 <div class="alert alert-danger">Aún no has realizado tu pago, animate para iniciar el mejor curso de traiding!</div>
-            </div>
         </div>
     @endif
 </section>
@@ -262,8 +260,10 @@
       $("#welcome").css('display', 'none');
       if(currentVideo == 7){
          $("#welcome").css('display', 'block');
-      }
-      $("#detail-" + currentVideo).css('display', 'block');
+         $("#detail-" + currentVideo).css('display', 'none');
+      } else {
+        $("#detail-" + currentVideo).css('display', 'block');
+      }s
       $("#list-video-" + currentVideo).addClass("active");
     }
 
