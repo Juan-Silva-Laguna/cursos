@@ -13,14 +13,13 @@
                 </div>
                 <form class="form" action="{{ route('testimonios_save') }}" method="POST" accept-charset="UTF-8">
                    <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
-                    <div class="input-control">
-                        <label for="descripcion" class="input-label" hidden>Descripción</label>
-                        <input class="input-field" placeholder="Descripción" id="descripcion" type="text" class="form-control" name="descripcion" required>
-                    </div>
-                    <div class="input-control">
-                        <label for="password" class="input-label" hidden>Satisfación</label>
-                        <input class="input-field" placeholder="Satisfación" id="satisfacion" type="number"  min="1" max="5" class="form-control" name="satisfacion" required>
-                    </div>
+                        <p for="descripcion" class="input-p" >Descripción</p>
+                        <textarea class="input-field" id="descripcion" name="descripcion" required cols="5" rows="4"></textarea>
+                        <br><br>
+                        <label class="input-label" >Satisfación</label>
+                        <input type="range" max="5" min="1" name="satisfacion" id="satisfacion" required>
+                        <b id="viewSatisfacion"></b>
+                    <br><br>
                     <div class="input-control">
                         <input type="submit" name="submit" class="input-submit" value="Guardar">
                     </div>
@@ -63,6 +62,9 @@
         language: spanish(),
         searching: false,
         bLengthChange: false
+    });
+    $('#satisfacion').change(function() {
+                $('#viewSatisfacion').html($(this).val());
     });
 } );
 </script>

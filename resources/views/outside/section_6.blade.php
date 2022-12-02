@@ -3,7 +3,7 @@
   <div class="card card--white col-12" style="max-width: 100% !important;text-align: initial;padding: 0;">
     <video id="video-free" type="video/mp4" playsinline 
         controls="controls" controlsList="nodownload" 
-        src="{{Vite::asset('resources/videos/1.mp4')}}" width="100%" autoplay poster="{{Vite::asset('resources/images/logo.png')}}">
+        src="{{Vite::asset('resources/videos/1.mp4')}}" width="100%" poster="{{Vite::asset('resources/images/poster.png')}}">
       Tu navegador no admite el elemento <code>video</code>.
       </video>
       <div class="detail-video">

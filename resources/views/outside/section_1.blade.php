@@ -3,12 +3,12 @@
   <div class="grid grid--1x2 grid--centered grid-gap--small">
     <div class="value-proposition">
       <div class="badge-container">
-        <span class="badge badge--dark text--small">75% Ahorro</span>
-        <span class="text text--small text--regular text--white">Para el fin de semana del Black Friday</span>
+        <span class="badge badge--dark text--small">50% Ahorro</span>
+        <span class="text text--small text--regular text--white">Por todo el mes de diciembre</span>
       </div>
       <h1 class="value-proposition__title">Educación para conseguir la Rentabilidad en el Trading</h1>
       <button class="value-proposition__button btn btn--flex btn--accent">
-        <span class="text--standart text--medium">Comenzar</span>
+        <a target="_blanck" href="https://www.instagram.com/invites/contact/?i=1s3dribkfudzf&utm_content=q20wozf" class="text--standart text--medium">Comenzar</a>
         <div class="chiron-icon-container">
           <img src="{{Vite::asset('resources/images/chevron-right.svg')}}" alt="Right Icon" />
         </div>

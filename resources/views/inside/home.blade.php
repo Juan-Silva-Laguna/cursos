@@ -1,11 +1,12 @@
 @extends('inside.layouts.body')
 @section('dashboard')
 <section class="row bg-dark" >
+    @if( Auth::user()->activo != 0 )
       <div class="row" >
         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 p-0">
              <video id="myVideo" type="video/mp4" playsinline 
              controls="controls" controlsList="nodownload" 
-             src="{{Vite::asset('resources/videos/')}}{{ Auth::user()->videos_vistos }}.mp4" width="100%" autoplay poster="{{Vite::asset('resources/images/logo.png')}}">
+             src="{{Vite::asset('resources/videos/')}}{{ Auth::user()->videos_vistos }}.mp4" width="100%" autoplay poster="{{Vite::asset('resources/images/poster.png')}}">
             Tu navegador no admite el elemento <code>video</code>.
             </video>
         </div>
@@ -102,7 +103,7 @@
                 <span class="badge bg-secondary">Liderazgo</span>
             </div>
             <div id="detail-0" style="display: none" class="col-12 p-4">
-                <h6><b> Bienvenida</b></h6>
+                <h6><b> CLASE 1 CONOCIENDO EL GRAFICADOR</b></h6>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
                     been the industry's standard dummy text ever since the 1500s, when an unknown 
                     printer took a galley of type and scrambled it to make a type specimen book. 
@@ -116,7 +117,7 @@
                 <span class="badge bg-secondary">Liderazgo</span>
             </div>
             <div id="detail-1" style="display: none" class="col-12 p-4">
-                <h6><b> Herramientas</b></h6>
+                <h6><b> CLASE 2 VELAS JAPONESAS</b></h6>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
                     been the industry's standard dummy text ever since the 1500s, when an unknown 
                     printer took a galley of type and scrambled it to make a type specimen book. 
@@ -130,7 +131,7 @@
                 <span class="badge bg-secondary">Liderazgo</span>
             </div>
             <div id="detail-2" style="display: none" class="col-12 p-4">
-                <h6><b> que es?</b></h6>
+                <h6><b> CLASE 3 MOVIMIENTOS DEL MERCADO</b></h6>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
                     been the industry's standard dummy text ever since the 1500s, when an unknown 
                     printer took a galley of type and scrambled it to make a type specimen book. 
@@ -144,7 +145,7 @@
                 <span class="badge bg-secondary">Liderazgo</span>
             </div>
             <div id="detail-3" style="display: none" class="col-12 p-4">
-                <h6><b> Como operar?</b></h6>
+                <h6><b> CLASE 4 COMO OPERAR EN TENDENCIAS</b></h6>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
                     been the industry's standard dummy text ever since the 1500s, when an unknown 
                     printer took a galley of type and scrambled it to make a type specimen book. 
@@ -158,7 +159,7 @@
                 <span class="badge bg-secondary">Liderazgo</span>
             </div>
             <div id="detail-4" style="display: none" class="col-12 p-4">
-                <h6><b> A corto plazo?</b></h6>
+                <h6><b> CLASE 5 ZONAS INSTITUCIONALES</b></h6>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
                     been the industry's standard dummy text ever since the 1500s, when an unknown 
                     printer took a galley of type and scrambled it to make a type specimen book. 
@@ -172,7 +173,7 @@
                 <span class="badge bg-secondary">Liderazgo</span>
             </div>
             <div id="detail-5" style="display: none" class="col-12 p-4">
-                <h6><b> A mediano plazo?</b></h6>
+                <h6><b> CLASE 6 PATRONES DE VELAS</b></h6>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
                     been the industry's standard dummy text ever since the 1500s, when an unknown 
                     printer took a galley of type and scrambled it to make a type specimen book. 
@@ -186,7 +187,49 @@
                 <span class="badge bg-secondary">Liderazgo</span>
             </div>
             <div id="detail-6" style="display: none" class="col-12 p-4">
-                <h6><b> A largo plazo?</b></h6>
+                <h6><b> CLASE 7 PATRONES DE VELAS PARTE II</b></h6>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+                    been the industry's standard dummy text ever since the 1500s, when an unknown 
+                    printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic 
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s 
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more 
+                    recently with desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum.</p>
+                <span class="badge bg-secondary">Emprendimiento</span>
+                <span class="badge bg-secondary">Traiding</span>
+                <span class="badge bg-secondary">Liderazgo</span>
+            </div>
+            <div id="detail-7" style="display: none" class="col-12 p-4">
+                <h6><b> CLASE 8 PATRONES DE VELA PARTE III</b></h6>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+                    been the industry's standard dummy text ever since the 1500s, when an unknown 
+                    printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic 
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s 
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more 
+                    recently with desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum.</p>
+                <span class="badge bg-secondary">Emprendimiento</span>
+                <span class="badge bg-secondary">Traiding</span>
+                <span class="badge bg-secondary">Liderazgo</span>
+            </div>
+            <div id="detail-8" style="display: none" class="col-12 p-4">
+                <h6><b> CLASE 9 OPERATIVA EN CANALES</b></h6>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+                    been the industry's standard dummy text ever since the 1500s, when an unknown 
+                    printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic 
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s 
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more 
+                    recently with desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum.</p>
+                <span class="badge bg-secondary">Emprendimiento</span>
+                <span class="badge bg-secondary">Traiding</span>
+                <span class="badge bg-secondary">Liderazgo</span>
+            </div>
+            <div id="detail-8" style="display: none" class="col-12 p-4">
+                <h6><b> CLASE 10 OPERATIVA CON ROMPIMIENTOS</b></h6>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
                     been the industry's standard dummy text ever since the 1500s, when an unknown 
                     printer took a galley of type and scrambled it to make a type specimen book. 
@@ -201,6 +244,13 @@
             </div>
         </div>
       </div>
+    @else
+        <div class="container mt-5">
+            <div class="row">
+                <div class="alert alert-danger">Aún no has realizado tu pago, animate para iniciar el mejor curso de traiding!</div>
+            </div>
+        </div>
+    @endif
 </section>
 
 <script>

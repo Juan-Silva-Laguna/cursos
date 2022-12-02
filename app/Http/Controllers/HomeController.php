@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Testimonio;
-
+use Illuminate\Support\Facades\Hash;
 class HomeController extends Controller
 {
     /**
@@ -39,10 +39,38 @@ class HomeController extends Controller
         return redirect('/home');
     }
 
+    public function cambiarDatos(Request $request)
+    {
+        $user = User::find(Auth::user()->id);
+ 
+        $user->celular = $request->celular;
+        $user->name = $request->nombre;
+        $user->email = $request->correo;
+
+        $user->save();
+        return redirect('/home');
+    }
+
+    public function showPerfil()
+    {
+        $users = User::where('id',Auth::user()->id)->first();
+
+        $patrocinador = User::where('usuario_id',Auth::user()->usuario_id)->first();
+
+        return view('inside.perfil', ['users'=>$users, 'patrocinador'=>$patrocinador]);
+    }
+
     public function usersActivesOrInactives($estado)
     {
         $users = User::where('usuario_id',Auth::user()->id)->where('activo', $estado)->get();
         $titulo = $estado == 0 ? "Usuario Inactivos":"Usuarios Activos";
+        return view('inside.users', ['users'=>$users, 'titulo'=>$titulo]);
+    }
+
+    public function todosUsuarios()
+    {
+        $users = User::get();
+        $titulo = "Todos los Usuarios";
         return view('inside.users', ['users'=>$users, 'titulo'=>$titulo]);
     }
 
@@ -51,6 +79,26 @@ class HomeController extends Controller
         $user = User::find($id);
  
         $user->activo = 1;
+         
+        $user->save();
+        return redirect('/home');
+    }
+
+    public function cambiarClave(Request $request)
+    {
+        $user = User::find(Auth::user()->id);
+ 
+        $user->password = Hash::make($request->clave);
+         
+        $user->save();
+        return redirect('/home');
+    }
+
+    public function inactivarUsuario($id)
+    {
+        $user = User::find($id);
+ 
+        $user->activo = 0;
          
         $user->save();
         return redirect('/home');

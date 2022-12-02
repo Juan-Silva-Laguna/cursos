@@ -12,6 +12,9 @@
                     <th class="text-center">Correo</th>
                     <th class="text-center">Celular</th>
                     <th class="text-center">Whatsapp</th>
+                    @if(Auth::user()->id < 6 )
+                        <th class="text-center">Estado</th>
+                    @endif
                 </tr>
             </thead>
             <tbody>
@@ -21,6 +24,13 @@
                     <th class="text-center">{{$user->email}}</th>
                     <th class="text-center">{{$user->celular}}</th>
                     <th class="text-center"> <a href="https://wa.me/57{$user->name}}">Click Aquí</a></th>
+                    @if( Auth::user()->id < 6 )
+                        @if($user->activo==0)
+                        <th class="text-center"> <a class="btn btn-danger" href="/activar/{{$user->id}}">Activar</a></th>
+                        @else
+                        <th class="text-center"> <a class="btn btn-success" href="inactivar/{{$user->id}}">Inactivar</a></th>
+                        @endif
+                    @endif
                 </tr>
             @endforeach
             </tbody>

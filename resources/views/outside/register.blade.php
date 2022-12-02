@@ -9,7 +9,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'EliteAcademy') }}</title>
 
 
     <!-- Fonts ICON ASOWEMO -->
@@ -55,7 +55,7 @@
                     </div>
                     <div class="input-control">
                         <a href="/" class="text text-links">Volver</a>
-                        <input type="submit" name="submit" class="input-submit" value="Ingresar">
+                        <input type="submit" name="submit" class="input-submit" value="Registrar">
                     </div>
                 </form>
             </section>
