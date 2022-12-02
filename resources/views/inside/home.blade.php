@@ -263,7 +263,7 @@
          $("#detail-" + currentVideo).css('display', 'none');
       } else {
         $("#detail-" + currentVideo).css('display', 'block');
-      }s
+      }
       $("#list-video-" + currentVideo).addClass("active");
     }
 
